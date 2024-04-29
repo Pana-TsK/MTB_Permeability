@@ -33,7 +33,7 @@ In order to run the script to calculate descriptors refer to the sample Smiles.c
 ```
 - Prediction results will be saved in `Prediction_Results.csv` which includes predicted permeability and associated probability.
 
-** Citation
+## Citation
 
 If you use ............. in your publication, consider citing the paper:
 ```
