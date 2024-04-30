@@ -18,18 +18,19 @@ Before running these scripts, create a new conda environment and install the fol
 - scikit-learn (1.3.2)
 - mordred (1.2.0)
 - rdkit (2023.9.4)
+- numpy (1.23.5)
 
 ## Usage
 
 In order to run the script to calculate descriptors refer to the sample Smiles.csv file added to the repository. There should be only one column in the csv file with the heading 'SMILES'. Running this script produces a csv file named 'Descriptors_Output.csv' in the same folder. This file is the input file for the main prediction script. Add the normalization and model .pkl files as arguments. 
 - Download this repository and ensure that all the files are present in the same folder when running the script.
-- Run smi2desc_nah.py .
+- Run smi2desc_nah.py.
 ```
   python smi2desc_nah.py <path_to_csv_file>
 ```
-- Run desc2model.py .
+- Run desc2model.py.
 ```
-  python desc2model.py <path_to_csv_file> <path_to_scaler_pkl> <path_to_model_pkl>
+  python desc2model.py <path_to_csv_file> <path_to_normalization_pkl> <path_to_model_pkl>
 ```
 - Prediction results will be saved in `Prediction_Results.csv` which includes predicted permeability and associated probability.
 
