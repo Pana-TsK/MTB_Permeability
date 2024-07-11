@@ -33,8 +33,8 @@ In order to run the script to calculate descriptors refer to the sample Smiles.c
   python desc2model.py <path_to_csv_file> <path_to_normalization_pkl> <path_to_model_pkl>
 ```
 - Prediction results will be saved in `Prediction_Results.csv` which includes predicted permeability and associated probability.
-- Prediction results contain two columns 'Predictions' and 'Probability_of_Permeability'. This file give sthe final results (whether the SMILES entries are cell wall permeable or not and the probability of 
-  permeability.
+- Prediction results contain two columns 'Predictions' and 'Probability_of_Permeability'. This file contains the final results (whether the SMILES entries are cell wall permeable or not and the probability of 
+  permeability). 
 
 ## Citation
 
