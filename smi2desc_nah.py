@@ -3,6 +3,7 @@ from mordred import Calculator, descriptors
 from rdkit import Chem
 from rdkit.Chem import PandasTools
 import pandas as pd
+import traceback
 
 def calculate_descriptors_from_csv(input_csv):
     # Read CSV file containing SMILES strings
@@ -43,3 +44,4 @@ if __name__ == "__main__":
         descriptors_df.to_csv('Descriptors_Output.csv', index=False)
     except Exception as e:
         print(f"An error occurred: {e}")
+        traceback.print_exc()
